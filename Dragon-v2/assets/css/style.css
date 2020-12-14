@@ -9,6 +9,20 @@ html {
 *:after {
   box-sizing: inherit;
 }
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
 
 /* ----- Utility Styles ---- */
 
@@ -45,6 +59,7 @@ img {
   height: auto;
 }
 
+
 /* ----- Global Styles ---- */
 
 body {
@@ -65,9 +80,9 @@ header.primary {
 header.primary::before {
   content: "";
   background-image: url("../img/Logo.png");
-  background-size: 50% 50%;
   background-size: cover;
   position: absolute;
+  background-position:center;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -75,23 +90,19 @@ header.primary::before {
   opacity: 0.4;
 }
 
-header.primary h1 {
-  font-size: 3.2rem;
-  margin: 20px 0;
-  position: relative;
-}
 
-header.primary h1 a {
-  color: #ffffff;
+
+header.primary::after {
+  content: "";
   background-image: url("../img/logo2.jpg");
-  display: block;
-  width: 450px;
-  height: 70px;
-  margin: 0 auto;
-  text-indent:100%;
-  white-space:nowrap;
-  overflow:hidden;
-  
+  background-size: cover;
+  position: absolute;
+  background-position:center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
 }
 
 header.primary h2 {
