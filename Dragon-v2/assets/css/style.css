@@ -92,7 +92,7 @@ header.primary::before {
 
 
 
-header.primary::after {
+header.primary h1 a{
   content: "";
   background-image: url("../img/logo2.jpg");
   background-size: cover;
